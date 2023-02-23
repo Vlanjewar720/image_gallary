@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bts_gallary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap_css_file.css" />
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to right,#0575e6, #00f260);
+           }
+
+        *{
+            box-sizing: border-box;
+        }
+        @font-face
+        {
+          font-family: myfont;
+          src: url(NoizeSportFreeVertion-Regular.ttf);
+          
+        }
+        @font-face{
+          font-family: myname;
+        
+          src: url(SoccerLeagueCollege.ttf);
+        }
+        h1{
+          font-family: myfont;
+          text-shadow: 0 0 10 white;
+        }
+        h3{
+          font-family: myname;
+          font-size: 30px;
+          text-shadow: 0 0 5px rgb(178, 248, 15);
+        }
+        /* a n i m a t i o n   */
+        .box-main
+        {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          height: 100%;
+        }
+        .box-main .firne{
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 6px solid yellow;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+        .box-main .firne:nth-child(1){
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(2){
+            position: absolute;
+            top: 5%;
+            left: 20%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(3){
+            position: absolute;
+            top: 50%;
+            left: 3%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(4){
+            position: absolute;
+            top: 2%;
+            left: 50%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(5){
+            position: absolute;
+            top: 30%;
+            left: 70%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(6){
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(7){
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(8){
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            animation: animate 5s linear infinite;
+        }
+        .box-main .firne:nth-child(9){
+            position: absolute;
+            top: 5%;
+            left: 60%;
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate
+        {
+            0%{
+                transform: scale(0) translateY(0) rotate(0);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1.5) translateY(-90) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+      <div class="container justify-content-around py-md-5">
+        <div class="head text-center py-md-4 fs-6">
+            <h1 class="fw-bold">IMAGE GALLARY</h1>
+        </div>
+         <!-- animaion part start   -->
+  <div class="box-main container container-sm flex-wrap">
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+    <div class="firne "></div>
+</div>
+  <!-- animaion part start  end -->
+        <div class="row justify-content-sm-around img-fluid ">
+            <div class="col-sm-12 col-md-3 d-flex"> 
+                <div class="card">    
+                  <img src="./bts_img_gallary/bird_image/parrot-1.png" class="card-img-top img-fluid" alt="">
+                   <div class="card-body text-center">
+                    <h3 class="card-title">BIRD PHOTOS</h3>
+                     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="bts_img_bird.html" class="btn btn-primary text-center">Click Hear</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 d-flex">
+                <div class="card" >    
+                  <img src="./bts_img_gallary/flower_img/rose-1.jpeg" height="40PX" class="card-img-top img-fluid" alt="">
+                   <div class="card-body text-center">
+                    <h3 class="card-title">FLOWER PHOTOS</h3>
+                     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="bts_img_flower.html" class="btn btn-primary">Click Hear</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 d-flex "> 
+                <div class="card">    
+                    <img src="./bts_img_gallary/nature_img/nature-1.jpg" class="card-img-top img-fluid" alt="">
+                      <div class="card-body text-center">
+                       <h3 class="card-title">NATURE PHOTOS</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                 <a href="#" class="btn btn-primary">Click Hear</a>
+              </div>
+            </div>
+          </div>
+        
+            <div class="col-sm-12 col-md-3 d-flex">
+                <div class="card">    
+                   <div class=""><img src="./bts_img_gallary/vehical_img/Tata_Nexon-ev_1.jpg" class="card-img-top img-fluid" alt=""></div> 
+                      <div class="card-body text-center">
+                   <h3 class="card-title">VEHICAL PHOTOS</h3>
+                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+             <a href="#" class="btn btn-primary">Click Hear</a>
+          </div>
+        </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>

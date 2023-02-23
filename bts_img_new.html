@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap_css_file.css" />
+    <!-- <link rel="stylesheet" href="./style_new_img.css"> -->
+    <title>new-gallary</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+    .container h1{
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        padding: 15px;
+        color: #333;
+        text-align: center;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+  .container .popup-img
+  {
+     position: fixed;
+     top: 0; left: 0;
+     background : rgba(0, 0, 0, .9);
+     height: 100%;
+     width: 100%;
+     z-index: 100;
+
+  }
+  .container .popup-img span{
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 40px;
+     font-weight: bolder;
+     color: #fff;
+     cursor: pointer;
+     z-index: 100;
+
+  }
+  .container .popup-img img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+  }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1>IMAGE GALLARY</h1>
+        <div class="row row-cols-4">
+
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/paris (2).jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/bookc.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/cover2.png" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/paris(3).jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/travel-7.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/travel3.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/travel4.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/trval1.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/trval2.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/travel-5.jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/paris(3).jpg" class="img-thumbnail w-100 h-100 img-fluid"></div>
+            <div class="img-thumbnail image col-md-3 col-sm-12"><img src="/bts_imge_gallary/bts_img_gallary/travel_img/paris(3).jpg" class="w-100 h-100 img-fluid"></div>
+
+        </div>
+           <div class="popup-img">
+            <span>&times;</span>
+            <img src="/bts_imge_gallary/bts_img_gallary/travel_img/paris (2).jpg" >
+           </div>
+    </div>
+    <script>
+        document.querySelectorAll('.image img').forEach = {
+            document.querySelector('.popup-image').style.display = 'block'
+        };
+    </script>
+</body>
+</html>
